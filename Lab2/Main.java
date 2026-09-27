@@ -15,23 +15,33 @@ class Main {
     // Comment/Uncomment the following 3 method calls as you work on each method.
     // No code should be added to the main method. All of your code will go into the methods in Lab2.
     lab.linkedList();
-    lab.queue();
-    lab.stack();
+    // lab.queue();
+    // lab.stack();
   }
 }
 
 class Lab2 {
   public void linkedList() {
     // 1. Create a LinkedList<String> object called progLanguages
+    LinkedList<String> progLanguages = new LinkedList<String>();
 
     // 2. Add elements to progLanguages: "Java", "Python", "JavaScript", "C++"
+    progLanguages.add("Java");
+    progLanguages.add("Python");
+    progLanguages.add("JavaScript");
+    progLanguages.add("C++");
 
     // 3. Remove the element "C++" from the list using .remove()
+    progLanguages.remove("C++");
 
     // 4. Add an element "HTML" at index 2.
+    progLanguages.add(2, "HTML");
 
     // 5. Iterate over progLanguages and use println() to output each element. You must create an Iterator<string> and use hasNext(), and next() similar to the example in our book.
-    
+    Iterator<String> iterator = progLanguages.iterator();
+    while (iterator.hasNext()) {
+      System.out.println(iterator.next());
+    }
   }
   
   public void queue() {
