@@ -2,24 +2,32 @@ public class Main {
   public static void main(String[] args) {
     String text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     
-    String bestCase = "";
+    String bestCase = "ABC";
 
     // * Initialize startTime here
+    long startTimeBest = System.nanoTime();
     int index = match(text, bestCase);
     // * Initialize endTime here
+    long endTimeBest = System.nanoTime();
     // * Calculate elapsedTime here
+    long elapsedTimeBest = (endTimeBest - startTimeBest);
+    System.out.println(elapsedTimeBest);
     
     if (index >= 0)
       System.out.println("best-case input matched at index " + index);
     else
       System.out.println("best-case input unmatched");   
 
-    String worstCase = "";
+    String worstCase = "789";
     
     // * Initialize startTime here
+    long startTimeWorst = System.nanoTime();
     index = match(text, worstCase);
     // * Initialize endTime here
+    long endTimeWorst = System.nanoTime();
     // * Calculate elapsedTime here
+    long elapsedTimeWorst = (endTimeWorst - startTimeWorst);
+    System.out.println(elapsedTimeWorst);
     
     if (index >= 0)
       System.out.println("worst-case input matched at index " + index);
