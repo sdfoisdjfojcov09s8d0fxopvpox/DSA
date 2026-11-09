@@ -24,15 +24,21 @@ class Main {
     
 
     // Step 4 - Traverse and output the values using inorder (sorted)
+    System.out.println("inorder:");
     lab5Tree.inorder();
 
     // Step 5 - Traverse and output the values using postorder
+    System.out.println();
+    System.out.println("postorder:");
     lab5Tree.postorder();
 
     // Step 6 - Traverse and output the values using preorder
+    System.out.println();
+    System.out.println("preorder:");
     lab5Tree.preorder();
 
     // Step 7 - Display the result of a search for the value 36
+    System.out.println();
     System.out.println(lab5Tree.search(36));
 
     // Step 8 - Display the result of a search for the value 37
